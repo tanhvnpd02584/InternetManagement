@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<!-- Database connection settings -->
+		<property name="hbm2ddl.auto">create</property>
+		<property name="show_sql">true</property>
+		<mapping class="com.fsoft.model.bean.UsingComputer" />
+		<mapping class="com.fsoft.model.bean.Computer" />
+		<mapping class="com.fsoft.model.bean.Guest" />
+		<mapping class="com.fsoft.model.bean.UsingService" />
+		<mapping class="com.fsoft.model.bean.Service" />
+	</session-factory>
+</hibernate-configuration>
